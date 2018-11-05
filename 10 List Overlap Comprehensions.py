@@ -30,16 +30,12 @@ c = list(set([item for item in a if item in b]))
 print("Overlaped lists 1 and 2:", c)
 
 d_size = random.randint(5, 15)
-d_range = range(1, d_size+1)
-d = []
-for item in d_range:
-    d.append(random.randint(0, 20)), d.sort()
+d = random.sample(range(20), d_size)
+d.sort()
 print("List 3 (randomized):", d)
 e_size = random.randint(5, 15)
-e_range = range(1, e_size+1)
-e = []
-for item in e_range:
-    e.append(random.randint(0, 20)), e.sort()
+e = random.sample(range(20), e_size)
+e.sort()
 print("List 4 (randomized):", e)
 f = list(set([item for item in d if item in e]))
 print("Overlaped lists 3 and 4:", f)
