@@ -9,6 +9,6 @@ r = requests.get(nyt_url)
 r_html = r.text
 soup = BeautifulSoup(r_html, "html.parser")
 titlelist = []
-for title in soup.find_all("h2"):
+for title in soup.find_all("h2", class_="esl82me2"):
     titlelist.append(title.text)
 print(titlelist)
