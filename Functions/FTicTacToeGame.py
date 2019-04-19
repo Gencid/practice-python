@@ -27,7 +27,7 @@ def check_win(board):
 
 def who_won(results):
     if results == 1:
-        print("Player 1 won! Congratulations!")
+        print("Player 1 won! Well done!")
         return 1
     elif results == 2:
         print("Player 2 won! Well done!")
@@ -39,9 +39,9 @@ def input_coords(player, board):
     while True:
         inputer = ""
         if player == 1:
-            inputer = input("Player one, where will you input your \33[31mX\33[0m?\n>")
+            inputer = input("Player 1, where will you input your \33[31mX\33[0m?\n>")
         elif player == 2:
-            inputer = input("Player two, where will you input your \33[34mO\33[0m?\n>")
+            inputer = input("Player 3, where will you input your \33[34mO\33[0m?\n>")
         inputer.strip()
         # ---- Handling errors ----
         if len(inputer) < 3:
